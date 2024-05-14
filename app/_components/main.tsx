@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Main() {
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col h-screen">
             <div className="flex justify-center items-center bg-gray-600 text-white p-6 text-lg font-bold"> Тротуарная плитка, брусчатка, бордюры, блоки от производителя в <div className="ml-2 text-yellow-400">  г. Сергиев Посад</div></div>
             <div>
                 <div className="flex justify-center p-4 mt-4 text-3xl font-bold"> Категории продукции </div>
