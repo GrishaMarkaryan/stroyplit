@@ -1,15 +1,9 @@
 import Image, { StaticImageData } from "next/image"
-
-export type Products = {
-    name: string,
-    photo: StaticImageData,
-    price: number,
-    size: string,
-}
+import { Product } from "../[productGroup]/all-products"
 
 export default function CategoryWraper({ category, arr }: {
-    category: string,
-    arr: Products[]
+    category: string | undefined;
+    arr: Product[]
 
 }) {
     return (

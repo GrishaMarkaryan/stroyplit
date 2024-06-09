@@ -10,16 +10,15 @@ import blokPeregorodochny from '@/app/_images/blokPeregorodochny.jpg'
 import cement from '@/app/_images/cementMeshok.jpg'
 import { StaticImageData } from 'next/image'
 
-type PhotoType = string;
 
 interface ProductType {
   name: string;
   color: string;
   // Assuming there should be a 'photo' property for each type based on the comment
-  photo?: PhotoType;
+  photo?: string;
 }
 
-interface Product {
+export interface Product {
   name: string;
   photo: StaticImageData;
   price: number;
@@ -28,14 +27,10 @@ interface Product {
 }
 
 type AllProducts = {
-    'bruschatka': Product[];
-    'plitka': Product[];
-    'bordyur': Product[];
-    'bloki': Product[];
-    'cement': Omit<Product, 'types'>[];
+    [key: string]: Product[] | Omit<Product, 'types'>[];
 }
 
-export const allProducts: AllProducts = {     // здесь исправить тип, если any написать то не будет ошибки
+export const allProducts: AllProducts = {
 
     bruschatka: [
         {
@@ -159,14 +154,3 @@ export const allProducts: AllProducts = {     // здесь исправить �
         }
     ],
 }
-
-{/*
-    In this type definition:
-
-PhotoType is a type alias for a string, which is used to represent the photo URLs.
-ProductType describes the structure of the types array within each product, including an optional photo property as suggested by the comment in the code.
-Product describes the structure of each product, including a types array which is an array of ProductType.
-AllProducts describes the structure of the allProducts object, with keys for each product category and values that are arrays of Product. For the CEMENT category, we use Omit to exclude the types property since it's not present in the cement products.
-Please note that I've made an assumption that the photo properties are of type string. If they are meant to be a different type (e.g., an object representing an image), you should adjust the PhotoType accordingly. Additionally, the types property for Product is marked as optional (types?) because some products do not have this property, as seen in the BORDYUR and BLOKI categories.
-
-*/}

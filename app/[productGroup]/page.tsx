@@ -17,26 +17,20 @@ export default function ProductGroup({ params }: {
         switch (input) {
             case 'bruschatka':
                 return 'БРУСЧАТКА';
-                break;
             case 'plitka':
                 return 'ТРОТУАРНАЯ ПЛИТКА';
-                break;
             case 'bordyur':
                 return 'БОРДЮРЫ';
-                break;
             case 'bloki':
                 return 'БЛОКИ';
-                break;
             case 'cement':
                 return 'ЦЕМЕНТ';
-                break;
+            default:
+                return ''
         }
     }
 
-    const newArr = Object.keys(allProducts)
-        .filter((key) => key === params.productGroup)
-        .flatMap((key) => allProducts[key]) // This will get the array of products for the product group
-
+    const newArr = allProducts[params.productGroup] || []
     return (
         <div>
             <CategoryWraper category={defineCategory(params.productGroup)} arr={newArr} />
