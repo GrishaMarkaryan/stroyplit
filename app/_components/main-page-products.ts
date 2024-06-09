@@ -23,7 +23,7 @@ export const products: Products[] = [
         id: 2,
         bgPhoto: trotuarPlitka ,
         name: 'Тротуарная плитка',
-        URL: '/trotuarnaya-plitka'
+        URL: '/plitka'
 
     },
     {
