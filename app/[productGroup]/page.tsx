@@ -11,6 +11,7 @@ export type Products = {
 export default function ProductGroup({ params }: {
     params: {
         productGroup: string,
+        productId: string,
     }
 }) {
     const defineCategory = (input: string) => {
@@ -33,7 +34,7 @@ export default function ProductGroup({ params }: {
     const newArr = allProducts[params.productGroup] || []
     return (
         <div>
-            <CategoryWraper category={defineCategory(params.productGroup)} arr={newArr} />
+            <CategoryWraper category={defineCategory(params.productGroup)} arr={newArr} params={params} />
         </div>
     )
 }

@@ -11,7 +11,6 @@ export default function Footer() {
                         <div className="flex font-semibold"> г. Сергиев Посад </div>
                         <div className="text-lg"> Производственная зона, 15/1 </div>
                     </div>
-
                 </div>
 
                 <div className="flex flex-row justify-center items-center gap-4">
