@@ -31,10 +31,8 @@ export default function ProductGroup({ params }: {
         }
     }
 
-    const newArr = allProducts[params.productGroup] || []
+    const productGroupArray = allProducts[params.productGroup] || []
     return (
-        <div>
-            <CategoryWraper category={defineCategory(params.productGroup)} arr={newArr} params={params} />
-        </div>
+        <CategoryWraper category={defineCategory(params.productGroup)} arr={productGroupArray} params={params} />
     )
 }

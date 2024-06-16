@@ -1,9 +1,9 @@
 import { StaticImageData } from 'next/image'
-import bruschatka from '@/app/_images/bruschatka.jpg'
-import trotuarPlitka from '@/app/_images/trotuarPlitka.jpg'
-import bordyur from '@/app/_images/bordyur.jpg'
-import bloki from '@/app/_images/bloki.jpg'
-import cement from '@/app/_images/cement.png'
+import bruschatka from '@/app/_images/_bruschatka/bruschatka.jpg'
+import trotuarPlitka from '@/app/_images/_trotuarPlitka/trotuarPlitka.jpg'
+import bordyur from '@/app/_images/_bordyur/bordyur.jpg'
+import bloki from '@/app/_images/_bloki/bloki.jpg'
+import cement from '@/app/_images/_cement/cement.png'
 
 type Products = {
     id: number,
