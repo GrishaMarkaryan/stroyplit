@@ -10,14 +10,14 @@ export default function Header() {
                 <Image src={icon} alt="icon" height={50} />
                 <div className="flex font-bold text-3xl "> СТРОЙПЛИТ </div>
             </Link>
-            <div className="flex text-xl">
+            <div className="flex text-xl font-medium">
                 г. Сергиев Посад, Производственная зона, 15/1
             </div>
             <div className="flex flex-row justify-center items-center gap-4 mr-8">
                 <FaPhoneAlt size={22} />
                 <div className="flex flex-col text-xl">
                     <div className="font-semibold"> Связаться с нами </div>
-                    <div className="text-green-600"> +7(903)661-06-54 </div>
+                    <div className="text-green-600 font-medium"> +7(903)661-06-54 </div>
                 </div>
             </div>
         </div>

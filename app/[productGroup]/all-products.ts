@@ -30,7 +30,7 @@ import { StaticImageData } from 'next/image'
 
 interface ProductType {
   name: string;
-  photo: StaticImageData | null; // change to StaticImageData
+  photo: StaticImageData;
   color: string;
   price: number;
   size: string;
@@ -47,7 +47,7 @@ export interface Product {
 }
 
 type AllProducts = {
-    [key: string]: Product[] | Omit<Product, 'types'>[];
+    [key: string]: Product[];
 }
 
 export const allProducts: AllProducts = {
