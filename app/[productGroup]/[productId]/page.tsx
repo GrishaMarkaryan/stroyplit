@@ -44,14 +44,15 @@ export default function Product({ params }: {
                             </div>
 
                         </div>
-                        <a href="https://web.whatsapp.com/" target="blank" className="flex justify-center items-center h-fit gap-5 border-2 border-green-500 rounded-3xl mt-3 p-2 bg-zinc-200 absolute bottom-14 right-40">
+                        <a href="https://wa.me/79036610654" target="blank" className="flex justify-center items-center h-fit gap-5 border-2  rounded-3xl mt-3 px-4 py-5  bg-green-500 text-white absolute bottom-14 right-40">
                             <div className="text-3xl"> Заказать </div>
-                            <RiWhatsappFill size={35} color="green" />
+                            <RiWhatsappFill size={35} color="white" />
                         </a>
                     </div>
                 )}
             </div>
             <div className="text-3xl m-10"> Доставка: </div>
+            <div className="text-xl m-10"> Условия доставки согласуются индивидуально </div>
         </div>
     )
 }

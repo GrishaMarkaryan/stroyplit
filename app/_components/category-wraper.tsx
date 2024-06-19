@@ -31,9 +31,9 @@ export default function CategoryWraper({ category, arr, params }: {
                                 </div>
                             </div>
                         </Link>
-                        <a href="https://web.whatsapp.com/" target="blank" className="flex justify-center gap-5 border-2 border-black rounded-3xl mt-3 py-2 bg-green-50">
+                        <a href="https://wa.me/79036610654" target="blank" className="flex justify-center gap-5 border-2  rounded-3xl mt-3 py-2  bg-green-500 text-white">
                             <div className="text-xl font-medium"> Заказать </div>
-                            <RiWhatsappFill size={35} color="green" />
+                            <RiWhatsappFill size={35} color="white" />
                         </a>
                     </div>
                 )}
