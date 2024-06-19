@@ -3,7 +3,6 @@ import { useState } from "react";
 import { allProducts } from "../all-products";
 import Image from "next/image"
 import { RiWhatsappFill } from "react-icons/ri";
-import { FaCircle } from "react-icons/fa";
 import Colors from "@/app/_components/colors";
 
 export default function Product({ params }: {
@@ -12,7 +11,7 @@ export default function Product({ params }: {
         productGroup: string;
     };
 }) {
-    const [color, setColor] = useState('серый') // delete this when the Colors component is ready
+    const [color, setColor] = useState('серый')
 
     const productIdArray = allProducts[params.productGroup].filter((item) => item.id === params.productId)
     const product = productIdArray.length > 0 ? productIdArray[0] : null;
