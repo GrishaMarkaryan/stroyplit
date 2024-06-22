@@ -23,10 +23,10 @@ export default function Product({ params }: {
             <div className="flex justify-left flex-wrap gap-16 mx-24">
                 {productTypes && productTypes.map((item) =>
                     <div key={item.name} className="flex flex-row mx-28 p-3 w-full relative">
-                        <Image src={item.photo} alt='itemPhoto' className="border-2 border-black rounded-3xl" height={400} width={400} />
+                        <Image src={item.photo} alt='itemPhoto' className="border-2 rounded-3xl bg-stone-200" height={400} width={400} />
                         <div className="flex flex-col justify-between ml-12 gap-7 py-12">
                             <div className="flex gap-3 text-2xl">
-                                <div className="font-semibold"> Размер: </div>
+                                {params.productId !== 'cement' && <div className="font-semibold"> Размер: </div>}
                                 <div className="flex"> {item.size} </div>
                             </div>
 
@@ -40,7 +40,7 @@ export default function Product({ params }: {
 
                             <div className="flex items-center gap-3 mt-2 text-2xl">
                                 <div className="font-medium"> ЦЕНА: </div>
-                                <div className="text-blue-700">{item.price} ₽/ШТ.</div>
+                                <div className="text-blue-700">{item.price}</div>
                             </div>
 
                         </div>

@@ -11,7 +11,7 @@ export default function Header() {
                     <Image src={icon} alt="icon" height={50} />
                     <div className="flex font-bold text-3xl "> СТРОЙПЛИТ </div>
                 </Link>
-                <div className="flex gap-7 text-2xl">
+                <div className="flex gap-12 text-2xl font-medium">
                     <Link href={'/our-production'}> Продукция </Link>
                     <Link href={'/about-us'}> О компании </Link>
                     <Link href={'/our-contacts'}> Контакты </Link>

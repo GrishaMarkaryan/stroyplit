@@ -21,13 +21,13 @@ export default function CategoryWraper({ category, arr, params }: {
                 {arr.map((item) =>
                     <div key={item.URL} className="flex flex-col rounded-3xl w-72 bg-slate-200 hover:scale-105 duration-200">
                         <Link href={`${item.URL}`}>
-                            <Image src={item.photo} alt='itemPhoto' className="border-2 border-black bg-lime-50 rounded-3xl" height={400} width={400} />
+                            <Image src={item.photo} alt='itemPhoto' className="bg-stone-200 rounded-3xl" height={400} width={400} />
                             <div className="p-3">
                                 <div className="flex font-medium text-xl my-2"> {item.name} </div>
                                 <div className="flex"> {item.size} </div>
                                 <div className="flex items-center gap-3 mt-2">
                                     <div className="font-medium"> Цена: </div>
-                                    <div className="text-blue-700">{item.price} ₽/ШТ.</div>
+                                    <div className="text-blue-700"> {item.price}</div>
                                 </div>
                             </div>
                         </Link>
