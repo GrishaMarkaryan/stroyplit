@@ -40,8 +40,8 @@ export default function Main() {
                 </div>
             </div>
 
-            <div className="mb-[150px] px-[10%] w-full mt-[70px]">
-                <div className="text-4xl font-medium pb-[25px]"> ГАЛЕРЕЯ </div>
+            <div className="mb-[150px] px-[10%] w-full mt-[70px] bg-gray-200">
+                <div className="text-4xl font-medium py-[25px]"> ГАЛЕРЕЯ </div>
                 <SliderImages />
             </div>
 

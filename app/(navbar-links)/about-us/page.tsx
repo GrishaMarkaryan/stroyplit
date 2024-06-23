@@ -3,9 +3,12 @@ import SliderImages from "@/app/_components/slider"
 
 export default function AboutUs() {
     return (
-        <div className="px-[10%] w-full my-[70px]">
-            <SliderImages />
-            <div className="">
+        <div className="w-full my-[70px]">
+            <div className="bg-gray-300 px-[10%] ">
+                <SliderImages />
+
+            </div>
+            <div className="px-[10%] ">
                 <div className="py-10 text-4xl"> О компании </div>
                 <div className="flex flex-col pb-10 text-xl gap-4">
                     <div>
