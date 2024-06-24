@@ -1,25 +1,58 @@
+'use client'
+
 import Link from "next/link"
 import Image from "next/image";
 import icon from '@/app/_images/_photoSlider/иконка.png'
 import Contacts from "./contacts";
+import { TiThMenu } from "react-icons/ti";
+import { useState, useRef, useEffect } from "react";
 
 export default function Header() {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen)
+    }
+
+    const menuIconRef = useRef<HTMLDivElement>(null);
+    const menuListRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        let handler = (e: any) => {
+            if (!menuIconRef.current?.contains(e.target) && !menuListRef.current?.contains(e.target)) {
+                setIsMenuOpen(false);
+            }
+        }
+        document.addEventListener('mousedown', handler);
+        return () => {
+            document.removeEventListener('mousedown', handler)
+        }
+    }, [])
+
+
     return (
         <div>
-            <div className="flex flex-row gap-2 w-screen justify-between items-center bg-slate-200 h-32 fixed z-50">
-                <Link href={'/'} className="flex ml-12 p-3 gap-2 items-center">
-                    <Image src={icon} alt="icon" height={50} />
-                    <div className="flex font-bold text-3xl "> СТРОЙПЛИТ </div>
-                </Link>
-                <div className="flex gap-12 text-2xl font-medium">
-                    <Link href={'/our-production'}> Продукция </Link>
-                    <Link href={'/about-us'}> О компании </Link>
-                    <Link href={'/our-contacts'}> Контакты </Link>
-                </div>
-                <Contacts />
-            </div>
-            <div className="h-32"></div>
-        </div>
+            <div className="flex flex-col md:flex-row gap-2 w-screen justify-between items-center bg-slate-200 h-fit md:h-32 fixed z-50">
+                <div className="flex">
 
+                    <div ref={menuIconRef} className="pt-5 cursor-pointer md:hidden">
+                        <TiThMenu size={40} onClick={toggleMenu} />
+                    </div>
+                    <Link href={'/'} className="flex ml-4 md:ml-12 p-3 gap-2 items-center">
+                        <Image src={icon} alt="icon" height={50} />
+                        <div className="flex font-bold text-3xl "> СТРОЙПЛИТ </div>
+                    </Link>
+                </div>
+
+                <div ref={menuListRef} className={`flex md:flex ${isMenuOpen ? 'flex-col' : 'hidden h-0'} gap-2 items-start md:gap-12 text-2xl font-medium pb-7 md:pb-0`}>
+                    <Link href={'/our-production'} onClick={() => setIsMenuOpen(false)}> Продукция </Link>
+                    <Link href={'/about-us'} onClick={() => setIsMenuOpen(false)} > О компании </Link>
+                    <Link href={'/our-contacts'} onClick={() => setIsMenuOpen(false)}> Контакты </Link>
+                </div>
+                <Contacts isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+            </div>
+            <div className="h-20 md:h-32"></div>
+        </div>
     )
 }

@@ -18,33 +18,33 @@ export default function Product({ params }: {
     const productTypes = product?.types?.filter(item => item.color === color);
 
     return (
-        <div className="h-svh">
-            <div className="flex justify-center items-center text-3xl p-4 ml-24 m-7 bg-slate-200 rounded-xl w-2/5"> {`${productTypes && productTypes.map((item) => item.name)}`} </div>
-            <div className="flex justify-left flex-wrap gap-16 mx-24">
+        <div className="">
+            <div className="flex justify-center items-center text-3xl p-4 md:ml-24 m-2 md:m-7 md:bg-slate-200 rounded-xl w-fit md:w-2/5"> {`${productTypes && productTypes.map((item) => item.name)}`} </div>
+            <div className="flex justify-left flex-wrap gap-16 mx-4 md:mx-24">
                 {productTypes && productTypes.map((item) =>
-                    <div key={item.name} className="flex flex-row mx-28 p-3 w-full relative">
+                    <div key={item.name} className="flex flex-col md:flex-row md:mx-28 md:p-3 md:w-full relative">
                         <Image src={item.photo} alt='itemPhoto' className="border-2 rounded-3xl bg-stone-200" height={400} width={400} />
-                        <div className="flex flex-col justify-between ml-12 gap-7 py-12">
-                            <div className="flex gap-3 text-2xl">
+                        <div className="flex flex-col justify-between md:ml-12 gap-3 md:gap-7 py-3 md:py-12">
+                            <div className="flex gap-3 text-xl md:text-2xl">
                                 {params.productId !== 'cement' && <div className="font-semibold"> Размер: </div>}
                                 <div className="flex"> {item.size} </div>
                             </div>
 
                             {params.productGroup !== 'cement' && <div>
-                                <div className="flex items-center gap-5">
-                                    <div className="text-2xl font-medium">Цвет:</div>
-                                    <div className="text-2xl border-2 rounded-3xl w-fit py-3 px-4 bg-white"> {color} </div>
+                                <div className="flex items-center gap-5 text-xl md:text-2xl">
+                                    <div className=" font-medium">Цвет:</div>
+                                    <div className=" border-2 rounded-3xl w-fit py-3 px-4 bg-white"> {color} </div>
                                 </div>
                                 <Colors setColor={setColor} productId={params.productId} productGroup={params.productGroup} />
                             </div>}
 
-                            <div className="flex items-center gap-3 mt-2 text-2xl">
+                            <div className="flex items-center gap-3 mt-2 text-xl md:text-2xl">
                                 <div className="font-medium"> ЦЕНА: </div>
                                 <div className="text-blue-700">{item.price}</div>
                             </div>
 
                         </div>
-                        <a href="https://wa.me/79036610654" target="blank" className="flex justify-center items-center h-fit gap-5 border-2  rounded-3xl mt-3 px-4 py-5  bg-green-500 text-white absolute bottom-14 right-40">
+                        <a href="https://wa.me/79036610654" target="blank" className="flex justify-center items-center h-fit gap-5 border-2  rounded-3xl mt-3 px-4 py-5  bg-green-500 text-white md:absolute bottom-14 right-40">
                             <div className="text-3xl"> Заказать </div>
                             <RiWhatsappFill size={35} color="white" />
                         </a>

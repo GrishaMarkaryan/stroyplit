@@ -52,7 +52,7 @@ export default function SliderImages() {
 
     return (
         <div>
-            <Slider {...settings} >
+            <Slider {...settings} className="">
                 <div onClick={() => openModal(bochkeq)}>
                     <Image src={bochkeq} alt="bochkeq" height={800} className="p-5" />
                 </div>
