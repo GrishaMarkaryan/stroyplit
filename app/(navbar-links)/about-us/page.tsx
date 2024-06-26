@@ -3,7 +3,7 @@ import SliderImages from "@/app/_components/slider"
 
 export default function AboutUs() {
     return (
-        <div className="w-full my-[70px]">
+        <div className="w-full my-[15px] md:my-[70px]">
             <div className="bg-gray-300 px-[10%] ">
                 <SliderImages />
 

@@ -1,7 +1,7 @@
 import bruschatka_kirpichik_krasnaya from '@/app/_images/_bruschatka/bruschatka_krasnaya.png'
 import bruschatka_kirpichik_seraya from '@/app/_images/_bruschatka/bruschatka_seraya.png'
 import bruschatka_kirpichik_korichnevaya from '@/app/_images/_bruschatka/bruschatka_korichnevaya.png'
-import bruschatka_volna_krasnaya from '@/app/_images/_bruschatka/bruschatka_volna_krasnaya.jpg'
+import bruschatka_volna_krasnaya from '@/app/_images/_bruschatka/bruschatka_volna_krasnaya.png'
 import bruschatka_volna_seraya from '@/app/_images/_bruschatka/bruschatka_volna_seraya.png'
 import bruschatka_volna_korichnevaya from '@/app/_images/_bruschatka/bruschatka_volna_korichnevaya.png'
 
@@ -22,7 +22,6 @@ import blokPolnotely from '@/app/_images/_bloki/blokPeskoCementnyPolnoltely.png'
 import blokKeramzitny from '@/app/_images/_bloki/blokKeramzitny.png'
 import blokPeregorodochny from '@/app/_images/_bloki/blokPeregorodochny.png'
 
-import cement from '@/app/_images/_cement/meshki.png'
 import cementMeshok from '@/app/_images/_cement/cementMeshok.jpg'
 
 import { StaticImageData } from 'next/image'

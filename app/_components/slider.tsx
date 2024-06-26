@@ -19,24 +19,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function SliderImages() {
-    /*
-        const [modalIsOpen, setModalIsOpen] = useState(false);
-        const [selectedImage, setSelectedImage] = useState(null);
-    
-        const element = document.getElementById('__next');
-        if (element) {
-            Modal.setAppElement(element);
-        }
-    
-        const openModal = (imageSrc) => {
-            setSelectedImage(imageSrc);
-            setModalIsOpen(true);
-        };
-    
-        const closeModal = () => {
-            setModalIsOpen(false);
-        };
-    */
+
     const settings = {
         dots: true,
         infinite: true,
@@ -47,55 +30,62 @@ export default function SliderImages() {
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '40px',
-
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: '20px',
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    centerPadding: '20px',
+                }
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    centerPadding: '20px',
+                }
+            }
+        ]
     };
 
     return (
         <div>
-            <Slider {...settings} className="">
-                <div onClick={() => openModal(bochkeq)}>
+            <Slider {...settings}>
+                <div>
                     <Image src={bochkeq} alt="bochkeq" height={800} className="p-5" />
                 </div>
-                <div onClick={() => openModal(poezd)}>
+                <div>
                     <Image src={poezd} alt="poezd" height={800} className="p-5" />
                 </div>
-                <div onClick={() => openModal(photo1)}>
+                <div>
                     <Image src={photo1} alt="photo1" height={800} className="p-5" />
                 </div>
-                <div onClick={() => openModal(photo2)}>
+                <div>
                     <Image src={photo2} alt="photo2" height={800} className="p-5" />
                 </div>
-                <div onClick={() => openModal(photo3)}>
+                <div>
                     <Image src={photo3} alt="photo3" height={800} className="p-5" />
                 </div>
-                <div onClick={() => openModal(photo4)}>
+                <div>
                     <Image src={photo4} alt="photo4" height={800} className="p-5" />
                 </div>
-                <div onClick={() => openModal(photo5)}>
+                <div>
                     <Image src={photo5} alt="photo5" height={800} className="p-5" />
                 </div>
-                <div onClick={() => openModal(photo6)}>
+                <div>
                     <Image src={photo6} alt="photo6" height={800} className="p-5" />
                 </div>
-                <div onClick={() => openModal(photo7)}>
+                <div>
                     <Image src={photo7} alt="photo7" height={800} className="p-5" />
                 </div>
             </Slider>
-
-            {/* Modal for the clicked image 
-          
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                contentLabel="Image Modal"
-                className="Modal"
-                overlayClassName="Overlay"
-            >
-                {selectedImage && (
-                    <Image src={selectedImage} alt="Selected" layout="fill" />
-                )}
-            </Modal> 
-            */}
         </div>
 
     )

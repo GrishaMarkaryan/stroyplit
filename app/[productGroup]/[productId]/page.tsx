@@ -20,10 +20,12 @@ export default function Product({ params }: {
     return (
         <div className="">
             <div className="flex justify-center items-center text-3xl p-4 md:ml-24 m-2 md:m-7 md:bg-slate-200 rounded-xl w-fit md:w-2/5"> {`${productTypes && productTypes.map((item) => item.name)}`} </div>
-            <div className="flex justify-left flex-wrap gap-16 mx-4 md:mx-24">
+            <div className="flex justify-left flex-wrap gap-16 mx-4 xl:mx-24">
                 {productTypes && productTypes.map((item) =>
-                    <div key={item.name} className="flex flex-col md:flex-row md:mx-28 md:p-3 md:w-full relative">
-                        <Image src={item.photo} alt='itemPhoto' className="border-2 rounded-3xl bg-stone-200" height={400} width={400} />
+                    <div key={item.name} className="flex flex-col md:flex-row mx-5 xl:mx-28 md:p-3 md:w-full relative">
+                        <div className="w-fit">
+                            <Image src={item.photo} alt='itemPhoto' className="border-2 rounded-3xl bg-stone-200" height={400} width={400} />
+                        </div>
                         <div className="flex flex-col justify-between md:ml-12 gap-3 md:gap-7 py-3 md:py-12">
                             <div className="flex gap-3 text-xl md:text-2xl">
                                 {params.productId !== 'cement' && <div className="font-semibold"> Размер: </div>}
@@ -42,12 +44,12 @@ export default function Product({ params }: {
                                 <div className="font-medium"> ЦЕНА: </div>
                                 <div className="text-blue-700">{item.price}</div>
                             </div>
-
+                            <a href="https://wa.me/79036610654" target="blank" className="flex justify-center items-center h-fit gap-5 border-2  rounded-3xl mt-3  px-4 py-3 md:py-5  bg-green-500 text-white  bottom-14 right-40">
+                                <div className="text-2xl"> Заказать </div>
+                                <RiWhatsappFill size={35} color="white" />
+                            </a>
                         </div>
-                        <a href="https://wa.me/79036610654" target="blank" className="flex justify-center items-center h-fit gap-5 border-2  rounded-3xl mt-3 px-4 py-5  bg-green-500 text-white md:absolute bottom-14 right-40">
-                            <div className="text-3xl"> Заказать </div>
-                            <RiWhatsappFill size={35} color="white" />
-                        </a>
+
                     </div>
                 )}
             </div>
