@@ -8,10 +8,10 @@ export default function Contacts({ isMenuOpen, setIsMenuOpen }:
 ) {
     return (
         <div className={`hidden lg:flex lg:flex-row gap-1 lg:gap-3 xl:gap-16 lg:mr-5`}>
-            <div className="flex items-center gap-2 lg:text-sm">
+            <div className="flex items-center gap-2 lg:text-sm 2xl:text-lg">
                 <div>
                     <div className="flex font-semibold"> г. Сергиев Посад </div>
-                    <div className="xl:text-lg"> Производственная зона, 15/1 </div>
+                    <div> Производственная зона, 15/1 </div>
                 </div>
             </div>
 

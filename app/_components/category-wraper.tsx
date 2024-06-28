@@ -24,7 +24,7 @@ export default function CategoryWraper({ category, arr, params }: {
                             <div className="">
                                 <Image src={item.photo} alt='itemPhoto' className="md:bg-stone-200 rounded-3xl" />
                             </div>
-                            <div className="px-2 md:p-3">
+                            <div className={`${params.productGroup === 'cement' ? 'px-5' : 'px-2 md:p-3'}`}>
                                 <div className="flex md:font-medium text-lg md:text-xl my-2"> {item.name} </div>
                                 <div className="flex"> {item.size} </div>
                                 <div className="flex flex-col md:flex-row md:items-center md:gap-3 mt-2">

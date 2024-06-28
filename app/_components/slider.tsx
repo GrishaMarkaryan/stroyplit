@@ -19,6 +19,29 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function SliderImages() {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(null);
+
+    useEffect(() => {
+        const appElement = document.getElementById('__next');
+        if (appElement) {
+            console.log('Setting app element to #__next');
+            Modal.setAppElement('#__next');
+        } else {
+            console.warn('No element found with ID #__next, setting app element to body');
+            Modal.setAppElement('body');
+        }
+    }, []);
+
+    const openModal = (image: StaticImageData) => {
+        setSelectedImage(image);
+        setModalIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+        setSelectedImage(null);
+    };
 
     const settings = {
         dots: true,
@@ -55,39 +78,39 @@ export default function SliderImages() {
         ]
     };
 
+    const images = [
+        bochkeq, poezd, photo1, photo2, photo3, photo4, photo5, photo6, photo7
+    ];
+
     return (
         <div>
             <Slider {...settings}>
-                <div>
-                    <Image src={bochkeq} alt="bochkeq" height={800} className="p-5" />
-                </div>
-                <div>
-                    <Image src={poezd} alt="poezd" height={800} className="p-5" />
-                </div>
-                <div>
-                    <Image src={photo1} alt="photo1" height={800} className="p-5" />
-                </div>
-                <div>
-                    <Image src={photo2} alt="photo2" height={800} className="p-5" />
-                </div>
-                <div>
-                    <Image src={photo3} alt="photo3" height={800} className="p-5" />
-                </div>
-                <div>
-                    <Image src={photo4} alt="photo4" height={800} className="p-5" />
-                </div>
-                <div>
-                    <Image src={photo5} alt="photo5" height={800} className="p-5" />
-                </div>
-                <div>
-                    <Image src={photo6} alt="photo6" height={800} className="p-5" />
-                </div>
-                <div>
-                    <Image src={photo7} alt="photo7" height={800} className="p-5" />
-                </div>
+                {images.map((image, index) => {
+                    return (
+                        <div key={index} onClick={() => openModal(image)} className="">
+                            <Image src={image} alt={`photo${index}`} height={800} className="p-5 cursor-pointer" />
+
+                        </div>
+                    )
+                })}
+
             </Slider>
+
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                contentLabel="Image Modal"
+                className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75"
+                overlayClassName="fixed inset-0 bg-black bg-opacity-50"
+            >
+                <div className="relative mt-[100px]">
+                    <button onClick={closeModal} className="absolute top-0 right-0 m-4 text-white text-5xl">×</button>
+                    {selectedImage && (
+                        <Image src={selectedImage} alt="Selected" className="max-w-full max-h-full" />
+                    )}
+                </div>
+            </Modal>
+
         </div>
-
     )
-
 }
