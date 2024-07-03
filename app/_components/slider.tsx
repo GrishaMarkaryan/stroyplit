@@ -17,6 +17,9 @@ import photo7 from '@/app/_images/_photoSlider/7.jpg'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './slider.css'
+
+
 
 export default function SliderImages() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -84,7 +87,7 @@ export default function SliderImages() {
 
     return (
         <div>
-            <Slider {...settings}>
+            <Slider {...settings} className="px-0 md:px-5 mx-3 md:mx-5">
                 {images.map((image, index) => {
                     return (
                         <div key={index} onClick={() => openModal(image)} className="">
