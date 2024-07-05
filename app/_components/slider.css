@@ -1,0 +1,6 @@
+
+/* Override the default styles for the previous arrow */
+.slick-arrow:before {
+    font-size: 30px; /* Adjust the size as needed */
+    color: black;
+}
