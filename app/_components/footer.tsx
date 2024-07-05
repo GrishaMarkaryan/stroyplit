@@ -26,7 +26,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="font-bold text-xl md:text-2xl p-3 mt-4"> ООО "СТРОЙПЛИТ" </div>
+            <div className="font-bold text-xl md:text-2xl p-3 mt-4"> ООО &quot;СТРОЙПЛИТ&quot; </div>
 
         </div>
     )
