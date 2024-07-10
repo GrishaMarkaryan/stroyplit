@@ -47,7 +47,7 @@ export default function Header() {
 
                 <div
                     ref={menuListRef}
-                    className={`flex lg:flex ${isMenuOpen ? 'flex-col ' : 'hidden h-0'} gap-2 items-start xl:gap-12 text-xl lg:text-base xl:text-xl 2xl:text-2xl font-medium pb-7 lg:pb-0`}
+                    className={`flex lg:flex ${isMenuOpen ? 'flex-col ' : 'hidden h-0'} gap-2 items-center xl:gap-12 text-xl lg:text-base xl:text-xl 2xl:text-2xl font-medium pb-7 lg:pb-0`}
                 >
 
                     <Link href={'/our-production'} onClick={() => setIsMenuOpen(false)}> Продукция </Link>
