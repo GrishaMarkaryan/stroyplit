@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import Modal from 'react-modal';
 import { useState, useEffect } from "react";
 
-
 import bochkeq from '@/app/_images/_photoSlider/bochkeq.jpg'
 import poezd from '@/app/_images/_photoSlider/поезд.jpg'
 import photo1 from '@/app/_images/_photoSlider/1.jpg'
@@ -18,7 +17,6 @@ import photo7 from '@/app/_images/_photoSlider/7.jpg'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './slider.css'
-
 
 
 export default function SliderImages() {

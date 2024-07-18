@@ -54,7 +54,7 @@ export default function Product({ params }: {
                 )}
             </div>
             <div className="text-3xl m-10"> Доставка: </div>
-            <div className="text-xl m-10"> Условия доставки согласуются индивидуально </div>
+            <div className="text-xl m-10"> Условия доставки согласовываются индивидуально </div>
         </div>
     )
 }
