@@ -28,12 +28,12 @@ export default function Main() {
                         alt="mainBgImage"
                         layout="fill"
                         className="w-full object-cover absolute z-0" />
-                    <div className="text-white px-[10%] text-[30px] md:text-[45px] lg:text-[60px] bg-gray-600 bg-opacity-50   absolute z-10"> ТРОТУАРНАЯ ПЛИТКА, БОРДЮРЫ И БЛОКИ ОТ ПРОИЗВОДИТЕЛЯ В <span className="text-black font-medium">Г. СЕРГИЕВ ПОСАД</span></div>
+                    <div className="text-white px-[10%] text-[30px] md:text-[45px] lg:text-[50px] bg-gray-600 bg-opacity-50   absolute z-10"> ТРОТУАРНАЯ ПЛИТКА, БОРДЮРЫ И БЛОКИ ОТ ПРОИЗВОДИТЕЛЯ В <span className="text-black font-medium">Г. СЕРГИЕВ ПОСАД</span></div>
                 </div>
 
                 <Production />
 
-                <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-10 text-xl md:text-3xl md:p-10 mb-10">
+                <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-10 text-xl md:text-2xl md:p-10 mb-10">
                     <div className="flex flex-col justify-center items-center">
                         <TbTruckDelivery size={70} />
                         <div className="p-10"> Быстрая доставка </div>
@@ -49,7 +49,7 @@ export default function Main() {
                 </div>
 
                 <div className="mb-[80px] md:mb-[150px] px-[10%] w-full mt-[70px] bg-gray-200">
-                    <div className="text-2xl md:text-4xl font-medium py-[25px]"> ГАЛЕРЕЯ </div>
+                    <div className="text-2xl md:text-3xl font-medium py-[25px]"> ГАЛЕРЕЯ </div>
                     <SliderImages />
                 </div>
             </main>
