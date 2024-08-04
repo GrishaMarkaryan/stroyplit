@@ -3,7 +3,7 @@ import { MdLocationOn } from "react-icons/md";
 
 export default function Footer() {
     return (
-        <div className="flex flex-col w-full  items-center bg-slate-200 md:text-xl h-fit py-6">
+        <div className="flex flex-col w-full text-lg items-center bg-slate-200 h-fit py-6">
             <div className="flex flex-col md:flex-row  gap-7 md:gap-28 items-start md:items-center">
 
                 <div className="flex items-center gap-2">
@@ -26,7 +26,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="font-bold text-xl md:text-2xl p-3 mt-4"> ООО &quot;СТРОЙПЛИТ&quot; </div>
+            <div className="font-bold text-xl p-3 mt-4"> ООО &quot;СТРОЙПЛИТ&quot; </div>
 
         </div>
     )

@@ -104,7 +104,7 @@ export default function SliderImages() {
                 className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75"
                 overlayClassName="fixed inset-0 bg-black bg-opacity-50"
             >
-                <div className="relative mt-[100px]">
+                <div className="relative mt-[160px]">
                     <button onClick={closeModal} className="absolute top-0 right-0 m-4 text-white text-5xl">×</button>
                     {selectedImage && (
                         <Image src={selectedImage} alt="Selected" className="max-w-full max-h-full" />
