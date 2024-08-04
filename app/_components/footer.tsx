@@ -20,9 +20,9 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col ">
                         <div className="font-semibold "> Контактный телефон </div>
-                        <div className="text-green-600"> +7(496)552-21-80 </div>
-                        <div className="text-green-600"> +7(903)661-06-54 </div>
-                        <div className="text-green-600"> +7(906)774-65-55 </div>
+                        <div> +7(496)552-21-80 </div>
+                        <div> +7(903)661-06-54 </div>
+                        <div> +7(906)774-65-55 </div>
                     </div>
                 </div>
             </div>

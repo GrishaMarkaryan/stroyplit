@@ -107,7 +107,7 @@ export default function SliderImages() {
                 <div className="relative mt-[160px] mb-[30px]">
                     <button onClick={closeModal} className="absolute top-0 right-0 m-4 text-white text-5xl">×</button>
                     {selectedImage && (
-                        <Image src={selectedImage} height={600} alt="Selected" className="max-w-full max-h-full" />
+                        <Image src={selectedImage} height={500} alt="Selected" className="max-w-full max-h-full" />
                     )}
                 </div>
             </Modal>
