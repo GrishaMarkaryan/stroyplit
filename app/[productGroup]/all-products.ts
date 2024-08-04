@@ -201,7 +201,7 @@ export const allProducts: AllProducts = {
         {
             id: 'blok_polnotely',
             URL: 'bloki/blok_polnotely',
-            name: 'Блок песко-цементный стеновой ПОЛНОТЕЛЫЙ',
+            name: 'Блок песко-цементный ПОЛНОТЕЛЫЙ',
             photo: blokPolnotely,
             price: '-',
             size: '390 x 188 x 190',
@@ -218,7 +218,7 @@ export const allProducts: AllProducts = {
         {
             id: 'blok_pustotely',
             URL: 'bloki/blok_pustotely',
-            name: 'Блок песко-цементный стеновой ПУСТОТЕЛЫЙ',
+            name: 'Блок песко-цементный ПУСТОТЕЛЫЙ',
             photo: blokPustotely,
             price: '-',
             size: '390 x 188 x 190',
@@ -235,7 +235,7 @@ export const allProducts: AllProducts = {
         {
             id: 'blok_keramzitny',
             URL: 'bloki/blok_keramzitny',
-            name: 'Блок керамзитный стеновой ПУСТОТЕЛЫЙ',
+            name: 'Блок керамзитный ПУСТОТЕЛЫЙ',
             photo: blokKeramzitny,
             price: '-',
             size: '390 x 188 x 190',

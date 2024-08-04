@@ -19,7 +19,7 @@ export default function CategoryWraper({ category, arr, params }: {
             <div className="flex justify-center items-center text-white text-xl font-medium p-4 m-7 bg-cyan-700 rounded-xl w-fit"> {category} </div>
             <div className="flex justify-left flex-wrap gap-7 md:gap-16 mx-4 md:mx-24">
                 {arr.map((item) =>
-                    <div key={item.URL} className="flex flex-col rounded-3xl w-[350px] md:w-72 bg-stone-200 md:bg-slate-200 hover:scale-105 duration-200">
+                    <div key={item.URL} className="flex flex-col rounded-3xl md:w-64 bg-stone-200 md:bg-slate-200 hover:scale-105 duration-200">
                         <Link href={`${item.URL}`} className="flex md:flex-col">
                             <div className="">
                                 <Image src={item.photo} alt='itemPhoto' className="md:bg-stone-200 rounded-3xl" />
