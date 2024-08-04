@@ -33,21 +33,21 @@ export default function Header() {
 
     return (
         <div>
-            <div className="flex flex-col lg:flex-row gap-2 w-screen justify-between items-center bg-slate-200 h-fit lg:h-32 fixed z-50">
+            <div className="flex flex-col lg:flex-row gap-2 w-screen justify-between items-center bg-slate-200 h-fit lg:h-24 fixed z-50">
 
                 <div className="flex">
                     <div ref={menuIconRef} className="pt-5 cursor-pointer lg:hidden">
                         <TiThMenu size={40} onClick={toggleMenu} />
                     </div>
                     <Link href={'/'} className="flex ml-4 lg:ml-12 p-3 gap-2 items-center">
-                        <Image src={icon} alt="icon" height={50} />
-                        <div className="flex font-bold text-3xl "> СТРОЙПЛИТ </div>
+                        <Image src={icon} alt="icon" height={42} />
+                        <div className="flex font-bold text-2xl "> СТРОЙПЛИТ </div>
                     </Link>
                 </div>
 
                 <div
                     ref={menuListRef}
-                    className={`flex lg:flex ${isMenuOpen ? 'flex-col ' : 'hidden h-0'} gap-2 items-center xl:gap-12 text-xl lg:text-base xl:text-xl 2xl:text-2xl font-medium pb-7 lg:pb-0`}
+                    className={`flex lg:flex ${isMenuOpen ? 'flex-col ' : 'hidden h-0'} gap-2 items-center xl:gap-12 text-xl lg:text-base xl:text-xl font-medium pb-7 lg:pb-0`}
                 >
 
                     <Link href={'/our-production'} onClick={() => setIsMenuOpen(false)}> Продукция </Link>
@@ -56,7 +56,7 @@ export default function Header() {
                 </div>
                 <Contacts isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
             </div>
-            <div className="h-[74px] lg:h-32"></div>
+            <div className="h-[66px] lg:h-24"></div>
         </div>
     )
 }
