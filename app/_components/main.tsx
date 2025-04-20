@@ -28,7 +28,7 @@ export default function Main() {
                         alt="mainBgImage"
                         layout="fill"
                         className="w-full object-cover absolute z-0" />
-                    <div className="text-white px-[10%] text-[30px] md:text-[45px] lg:text-[50px] bg-gray-600 bg-opacity-50 absolute z-5"> ТРОТУАРНАЯ ПЛИТКА, БОРДЮРЫ И БЛОКИ ОТ ПРОИЗВОДИТЕЛЯ В <span className="text-black font-medium">Г. СЕРГИЕВ ПОСАД</span></div>
+                    <div className="text-white px-[10%] text-[30px] md:text-[45px] lg:text-[50px] bg-gray-600 bg-opacity-50 absolute z-5"> ТРОТУАРНАЯ ПЛИТКА, БОРДЮРЫ И БЛОКИ ОТ ПРОИЗВОДИТЕЛЯ В Г. СЕРГИЕВ ПОСАД <span className="text-black font-medium"></span></div>
                 </div>
 
                 <Production />
