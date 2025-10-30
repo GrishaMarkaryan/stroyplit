@@ -4,15 +4,15 @@ import Slider from "react-slick";
 import Modal from 'react-modal';
 import { useState, useEffect } from "react";
 
-import bochkeq from '@/app/_images/_photoSlider/bochkeq.jpg'
-import poezd from '@/app/_images/_photoSlider/поезд.jpg'
-import photo1 from '@/app/_images/_photoSlider/1.jpg'
-import photo2 from '@/app/_images/_photoSlider/2.jpg'
-import photo3 from '@/app/_images/_photoSlider/3.jpg'
-import photo4 from '@/app/_images/_photoSlider/4.jpg'
-import photo5 from '@/app/_images/_photoSlider/5.jpg'
-import photo6 from '@/app/_images/_photoSlider/6.jpg'
-import photo7 from '@/app/_images/_photoSlider/7.jpg'
+import bochkeq from '@/app/_images/_photoSlider/bochkeq.webp'
+import poezd from '@/app/_images/_photoSlider/поезд.webp'
+import photo1 from '@/app/_images/_photoSlider/1.webp'
+import photo2 from '@/app/_images/_photoSlider/2.webp'
+import photo3 from '@/app/_images/_photoSlider/3.webp'
+import photo4 from '@/app/_images/_photoSlider/4.webp'
+import photo5 from '@/app/_images/_photoSlider/5.webp'
+import photo6 from '@/app/_images/_photoSlider/6.webp'
+import photo7 from '@/app/_images/_photoSlider/7.webp'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

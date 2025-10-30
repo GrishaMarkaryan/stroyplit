@@ -1,8 +1,8 @@
 import { StaticImageData } from 'next/image'
-import plitki from '@/app/_images/_bruschatka/plitki.png'
-import bordyuri from '@/app/_images/_bordyur/2bordyura.png'
-import bloki from '@/app/_images/_bloki/bloki.png'
-import cement from '@/app/_images/_cement/meshki.png'
+import plitki from '@/app/_images/_bruschatka/plitki.webp'
+import bordyuri from '@/app/_images/_bordyur/2bordyura.webp'
+import bloki from '@/app/_images/_bloki/bloki.avif'
+import cement from '@/app/_images/_cement/meshki.webp'
 
 type Products = {
     id: number,

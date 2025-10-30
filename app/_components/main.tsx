@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Production from "./production";
-import mainBgImage from '@/app/_images/_photoSlider/main.jpg'
+import mainBgImage from '@/app/_images/_photoSlider/main.webp'
 
 import { TbTruckDelivery } from "react-icons/tb";
 import { GrStatusGood } from "react-icons/gr";
