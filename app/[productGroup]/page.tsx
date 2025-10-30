@@ -8,12 +8,14 @@ export type Products = {
     price: number,
 }
 
-export default function ProductGroup({ params }: {
-    params: {
+export default async function ProductGroup({ params }: {
+    params: Promise<{
         productGroup: string,
         productId: string,
-    }
+    }>
 }) {
+    const resolvedParams = await params
+
     const defineCategory = (input: string) => {
         switch (input) {
             case 'bruschatka':
@@ -31,8 +33,8 @@ export default function ProductGroup({ params }: {
         }
     }
 
-    const productGroupArray = allProducts[params.productGroup] || []
+    const productGroupArray = allProducts[resolvedParams.productGroup] || []
     return (
-        <CategoryWraper category={defineCategory(params.productGroup)} arr={productGroupArray} params={params} />
+        <CategoryWraper category={defineCategory(resolvedParams.productGroup)} arr={productGroupArray} params={resolvedParams} />
     )
 }

@@ -17,10 +17,10 @@ import bodryurTrotuarny_korichnevy from '@/app/_images/_bordyur/bordyurTrotuarny
 
 import bordyurDorozhny from '@/app/_images/_bordyur/bordyurDorozhny.webp'
 
-import blokPustotely from '@/app/_images/_bloki/blokPeskoCementnyPustotely.avif'
-import blokPolnotely from '@/app/_images/_bloki/blokPeskoCementnyPolnoltely.avif'
-import blokKeramzitny from '@/app/_images/_bloki/blokKeramzitny.avif'
-import blokPeregorodochny from '@/app/_images/_bloki/blokPeregorodochny.avif'
+import blokPustotely from '@/app/_images/_bloki/blokPeskoCementnyPustotely.webp'
+import blokPolnotely from '@/app/_images/_bloki/blokPeskoCementnyPolnoltely.webp'
+import blokKeramzitny from '@/app/_images/_bloki/blokKeramzitny.webp'
+import blokPeregorodochny from '@/app/_images/_bloki/blokPeregorodochny.webp'
 
 import cementMeshok from '@/app/_images/_cement/cementMeshok.webp'
 
