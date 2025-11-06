@@ -9,7 +9,7 @@ const nextConfig = {
       ];
     },
     
-    output: 'standalone',
+    output: 'export',
 
 };
   
