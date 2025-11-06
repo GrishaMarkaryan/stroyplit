@@ -8,9 +8,9 @@ const nextConfig = {
         },
       ];
     },
-    
     output: 'export',
-
-};
-  
+    images: {
+      unoptimized: true, // если используешь next/image
+    },
+}; 
   export default nextConfig;
