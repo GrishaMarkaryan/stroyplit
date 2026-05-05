@@ -56,33 +56,33 @@ export const allProducts: AllProducts = {
             URL: '/plitka/kirpichik',
             name:'ТРОТУАРНАЯ ПЛИТКА "КИРПИЧИК"',
             photo: bruschatka_kirpichik_seraya,
-            price: 'от 800 ₽/М2',
+            price: 'от 900 ₽/М2',
             size: '200 x 100 x 60',
             types: [
                 {
                     name: 'ТРОТУАРНАЯ ПЛИТКА "КИРПИЧИК" КРАСНАЯ',
                     photo: bruschatka_kirpichik_krasnaya,
                     color: 'красный',
-                    price: '1100 ₽/М2',
+                    price: '1200 ₽/М2',
                     size: '200 x 100 x 60',
                 },
                 {
                     name: 'ТРОТУАРНАЯ ПЛИТКА "КИРПИЧИК" СЕРАЯ',
                     photo: bruschatka_kirpichik_seraya,
                     color: 'серый',
-                    price: '800 ₽/М2',
+                    price: '900 ₽/М2',
                     size: '200 x 100 x 60',
                 },
                 {
                     name: 'ТРОТУАРНАЯ ПЛИТКА "КИРПИЧИК" КОРИЧНЕВАЯ',
                     photo: bruschatka_kirpichik_korichnevaya,
                     color: 'коричневый',
-                    price: '1100 ₽/М2',
+                    price: '1200 ₽/М2',
                     size: '200 x 100 x 60',
                 },
             ]
         },
-        {
+       /* {
             id: 'volna',
             URL: '/plitka/volna',
             name:'ТРОТУАРНАЯ ПЛИТКА "ВОЛНА"',
@@ -98,34 +98,34 @@ export const allProducts: AllProducts = {
                     size: '245 x 131 x 80',
                 },
             ]
-        },
+        },*/
         {
             id: 'trotuarnaya_plitka',
             URL: '/plitka/trotuarnaya_plitka',
             name: 'ТРОТУАРНАЯ ПЛИТКА "КВАДРАТ"',
             photo: kvadrat,
-            price: 'от 750 ₽/М2',
+            price: 'от 850 ₽/М2',
             size: '300 x 300 x 50',
             types: [
                 {
                 name: 'ТРОТУАРНАЯ ПЛИТКА "КВАДРАТ" КРАСНАЯ',
                 photo: trotuarPlitka_krasnaya,   
                 color: 'красный',
-                price: '1050 ₽/М2',
+                price: '1150 ₽/М2',
                 size: '300 x 300 x 50',
             },
             {
                 name: 'ТРОТУАРНАЯ ПЛИТКА "КВАДРАТ" СЕРАЯ',
                 photo: trotuarPlitka_seraya,
                 color: 'серый',
-                price: '750 ₽/М2',
+                price: '850 ₽/М2',
                 size: '300 x 300 x 50',
             },
             {
                 name: 'ТРОТУАРНАЯ ПЛИТКА "КВАДРАТ" КОРИЧНЕВАЯ',
                 photo: trotuarPlitka_korichnevaya,
                 color: 'коричневый',
-                price: '1050 ₽/М2',
+                price: '1150 ₽/М2',
                 size: '300 x 300 x 50',
             },
         ]
@@ -138,28 +138,28 @@ export const allProducts: AllProducts = {
             URL: '/bordyur/bordyur_trotuarny',
             name: 'ТРОТУАРНЫЙ БОРДЮР',
             photo: bordyurTrotuarny,
-            price: 'от 250 ₽/ШТ',
+            price: 'от 280 ₽/ШТ',
             size: '1000 x 200 x 80',
             types: [
                 {
                 name: 'ТРОТУАРНЫЙ БОРДЮР КРАСНЫЙ',
                 photo: bodryurTrotuarny_krasny,   
                 color: 'красный',
-                price: '280 ₽/ШТ',
+                price: '300 ₽/ШТ',
                 size: '1000 x 200 x 80',
             },
             {
                 name: 'ТРОТУАРНЫЙ БОРДЮР СЕРЫЙ',
                 photo: bordyurTrotuarny_sery,
                 color: 'серый',
-                price: '250 ₽/ШТ',
+                price: '280 ₽/ШТ',
                 size: '1000 x 200 x 80',
             },
             {
                 name: 'ТРОТУАРНЫЙ БОРДЮР КОРИЧНЕВЫЙ',
                 photo: bodryurTrotuarny_korichnevy,
                 color: 'коричневый',
-                price: '280 ₽/ШТ',
+                price: '300 ₽/ШТ',
                 size: '1000 x 200 x 80',
             },
         ]
@@ -169,14 +169,14 @@ export const allProducts: AllProducts = {
             URL: '/bordyur/bordyur_dorozhny',
             name: 'ДОРОЖНЫЙ БОРДЮР',
             photo: bordyurDorozhny,
-            price: '500 ₽/ШТ',
+            price: '520 ₽/ШТ',
             size: '1000 x 300 x 150',
             types: [
                 {
                     name: 'ДОРОЖНЫЙ БОРДЮР',
                     photo: bordyurDorozhny,
                     color: 'серый',
-                    price: '500 ₽/ШТ',
+                    price: '520 ₽/ШТ',
                     size: '1000 x 300 x 150',
                 },
             ]
@@ -189,14 +189,14 @@ export const allProducts: AllProducts = {
             URL: 'bloki/blok_polnotely',
             name: 'Блок песко-цементный ПОЛНОТЕЛЫЙ',
             photo: blokPolnotely,
-            price: '110',
+            price: '120',
             size: '390 x 188 x 190',
             types: [
                 {
                     name: 'Блок песко-цементный стеновой ПОЛНОТЕЛЫЙ',
                     photo: blokPolnotely,
                     color: 'серый',
-                    price: '110',
+                    price: '120',
                     size: '390 x 188 x 190',
                 },
             ] 
@@ -206,19 +206,19 @@ export const allProducts: AllProducts = {
             URL: 'bloki/blok_pustotely',
             name: 'Блок песко-цементный ПУСТОТЕЛЫЙ',
             photo: blokPustotely,
-            price: '100',
+            price: '110',
             size: '390 x 188 x 190',
             types: [
                 {
                     name: 'Блок песко-цементный стеновой ПУСТОТЕЛЫЙ',
                     photo: blokPustotely,
                     color: 'серый',
-                    price: '100',
+                    price: '110',
                     size: '390 x 188 x 190',
                 },
             ] 
         },
-        {
+       /* {
             id: 'blok_keramzitny',
             URL: 'bloki/blok_keramzitny',
             name: 'Блок керамзитный ПУСТОТЕЛЫЙ',
@@ -234,7 +234,7 @@ export const allProducts: AllProducts = {
                     size: '390 x 188 x 190',
                 },
             ] 
-        },
+        },*/
         {
             id: 'blok_peregorodochny',
             URL: 'bloki/blok_peregorodochny',
