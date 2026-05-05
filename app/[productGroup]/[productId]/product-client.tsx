@@ -9,10 +9,13 @@ import Colors from "@/app/_components/colors"
 
 export type ProductType = {
   name: string
-  color: string
-  size?: string
-  price: string | number
   photo: StaticImageData
+  color: string
+  price: string | number
+  size?: string
+  pallet?: string
+  squareMeters?: string
+  weight?: string
 }
 
 export type Product = {
@@ -52,7 +55,7 @@ export default function ProductClient({
         {productTypes?.map((item) => (
           <div
             key={item.name}
-            className="flex flex-col md:flex-row mx-5 xl:mx-28 md:p-3 md:w-full relative"
+            className="flex flex-col md:items-center md:flex-row mx-5 xl:mx-28 md:p-3 md:w-full relative"
           >
             <div className="w-fit">
               <Image
@@ -64,11 +67,16 @@ export default function ProductClient({
               />
             </div>
 
-            <div className="flex flex-col justify-between md:ml-12 gap-3 md:gap-7 py-3 md:py-12">
+            <div className="flex flex-col justify-between md:ml-12 gap-3 md:gap-5 py-3 md:py-12">
               {productId !== "cement" && (
-                <div className="flex gap-3 text-xl">
-                  <div className="font-semibold">Размер:</div>
-                  <div>{item.size}</div>
+                <div className="flex flex-col gap-3 text-xl">
+                  <div> {item.size}</div>
+                  <div className="flex flex-col md:flex-row gap-2">
+                    <div> <span className="font-semibold">1 поддон - </span>{item.pallet},</div>
+                    {item.squareMeters && <div> <span className="font-semibold">1 кв.м -</span> {item.squareMeters},</div>}
+                    <div> <span className="font-semibold">1 шт - </span>{item.weight} </div>
+                  </div>
+
                 </div>
               )}
 
@@ -76,7 +84,7 @@ export default function ProductClient({
                 <div>
                   <div className="flex items-center gap-5 text-xl">
                     <div className="font-medium">Цвет:</div>
-                    <div className="border-2 rounded-3xl w-fit py-3 px-4 bg-white">
+                    <div className="border-2 rounded-3xl w-fit pb-1 px-3 bg-white">
                       {color}
                     </div>
                   </div>

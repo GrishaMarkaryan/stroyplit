@@ -32,6 +32,9 @@ interface ProductType {
   color: string;
   price: string;
   size: string;
+  pallet?: string;
+  squareMeters?: string;
+  weight?: string;
 }
 
 export interface Product {
@@ -65,6 +68,9 @@ export const allProducts: AllProducts = {
                     color: 'красный',
                     price: '1200 ₽/М2',
                     size: '200 x 100 x 60',
+                    pallet: '12 м²',
+                    squareMeters: '50 шт',
+                    weight: '2,5 кг'
                 },
                 {
                     name: 'ТРОТУАРНАЯ ПЛИТКА "КИРПИЧИК" СЕРАЯ',
@@ -72,6 +78,9 @@ export const allProducts: AllProducts = {
                     color: 'серый',
                     price: '900 ₽/М2',
                     size: '200 x 100 x 60',
+                    pallet: '12 м²',
+                    squareMeters: '50 шт',
+                    weight: '2,5 кг'
                 },
                 {
                     name: 'ТРОТУАРНАЯ ПЛИТКА "КИРПИЧИК" КОРИЧНЕВАЯ',
@@ -79,6 +88,9 @@ export const allProducts: AllProducts = {
                     color: 'коричневый',
                     price: '1200 ₽/М2',
                     size: '200 x 100 x 60',
+                    pallet: '12 м²',
+                    squareMeters: '50 шт',
+                    weight: '2,5 кг'
                 },
             ]
         },
@@ -113,6 +125,9 @@ export const allProducts: AllProducts = {
                 color: 'красный',
                 price: '1150 ₽/М2',
                 size: '300 x 300 x 50',
+                pallet: '12 м²',
+                squareMeters: '11 шт',
+                weight: '10 кг'
             },
             {
                 name: 'ТРОТУАРНАЯ ПЛИТКА "КВАДРАТ" СЕРАЯ',
@@ -120,6 +135,9 @@ export const allProducts: AllProducts = {
                 color: 'серый',
                 price: '850 ₽/М2',
                 size: '300 x 300 x 50',
+                pallet: '12 м²',
+                squareMeters: '11 шт',
+                weight: '10 кг'
             },
             {
                 name: 'ТРОТУАРНАЯ ПЛИТКА "КВАДРАТ" КОРИЧНЕВАЯ',
@@ -127,6 +145,9 @@ export const allProducts: AllProducts = {
                 color: 'коричневый',
                 price: '1150 ₽/М2',
                 size: '300 x 300 x 50',
+                pallet: '12 м²',
+                squareMeters: '11 шт',
+                weight: '10 кг'
             },
         ]
         },
@@ -147,6 +168,8 @@ export const allProducts: AllProducts = {
                 color: 'красный',
                 price: '300 ₽/ШТ',
                 size: '1000 x 200 x 80',
+                pallet: '42 шт',
+                weight: '30 кг'
             },
             {
                 name: 'ТРОТУАРНЫЙ БОРДЮР СЕРЫЙ',
@@ -154,6 +177,8 @@ export const allProducts: AllProducts = {
                 color: 'серый',
                 price: '280 ₽/ШТ',
                 size: '1000 x 200 x 80',
+                pallet: '42 шт',
+                weight: '30 кг'
             },
             {
                 name: 'ТРОТУАРНЫЙ БОРДЮР КОРИЧНЕВЫЙ',
@@ -161,6 +186,8 @@ export const allProducts: AllProducts = {
                 color: 'коричневый',
                 price: '300 ₽/ШТ',
                 size: '1000 x 200 x 80',
+                pallet: '42 шт',
+                weight: '30 кг'
             },
         ]
         },
@@ -178,6 +205,8 @@ export const allProducts: AllProducts = {
                     color: 'серый',
                     price: '520 ₽/ШТ',
                     size: '1000 x 300 x 150',
+                    pallet: '21 шт',
+                    weight: '96 кг'
                 },
             ]
         },
@@ -189,15 +218,17 @@ export const allProducts: AllProducts = {
             URL: 'bloki/blok_polnotely',
             name: 'Блок песко-цементный ПОЛНОТЕЛЫЙ',
             photo: blokPolnotely,
-            price: '120',
+            price: '120 ₽/ШТ',
             size: '390 x 188 x 190',
             types: [
                 {
                     name: 'Блок песко-цементный стеновой ПОЛНОТЕЛЫЙ',
                     photo: blokPolnotely,
                     color: 'серый',
-                    price: '120',
+                    price: '120 ₽/ШТ',
                     size: '390 x 188 x 190',
+                    pallet: '90 шт',
+                    weight: '27 кг'
                 },
             ] 
         },
@@ -206,15 +237,17 @@ export const allProducts: AllProducts = {
             URL: 'bloki/blok_pustotely',
             name: 'Блок песко-цементный ПУСТОТЕЛЫЙ',
             photo: blokPustotely,
-            price: '110',
+            price: '110 ₽/ШТ',
             size: '390 x 188 x 190',
             types: [
                 {
                     name: 'Блок песко-цементный стеновой ПУСТОТЕЛЫЙ',
                     photo: blokPustotely,
                     color: 'серый',
-                    price: '110',
+                    price: '110 ₽/ШТ',
                     size: '390 x 188 x 190',
+                    pallet: '90 шт',
+                    weight: '19 кг' 
                 },
             ] 
         },
@@ -240,15 +273,17 @@ export const allProducts: AllProducts = {
             URL: 'bloki/blok_peregorodochny',
             name: 'Блок песко-цементный ПЕРЕГОРОДОЧНЫЙ',
             photo: blokPeregorodochny,
-            price: '50',
+            price: '50 ₽/ШТ',
             size: '390 x 188 x 90',
             types: [
                 {
                     name: 'Блок песко-цементный ПЕРЕГОРОДОЧНЫЙ',
                     photo: blokPeregorodochny,
                     color: 'серый',
-                    price: '50',
+                    price: '50 ₽/ШТ',
                     size: '390 x 188 x 90',
+                    pallet: '222 шт',
+                    weight: '10 кг'
                 },
             ] 
         },
@@ -257,7 +292,7 @@ export const allProducts: AllProducts = {
         {
             id: 'cement',
             URL: 'cement/cement',
-            name: 'ЦЕМЕНТ',
+            name: 'ЦЕМЕНТ М500, 50 кг',
             photo: cementMeshok,
             price: '550 ₽/ШТ',
             size: null,
